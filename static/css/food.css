@@ -1,0 +1,14 @@
+.newsarea{
+	width:20%;
+	margin-left: 2em;
+	margin-right:2em;
+	height:450px;
+	float:left;
+}
+
+.newsarea img{
+	width: 100%;
+}
+
+
+

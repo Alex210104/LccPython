@@ -1,0 +1,99 @@
+body{
+	margin:0;  /*外部距離都設為0 上下左右 都是0*/
+}
+
+
+
+#banner{
+	height: 60px;
+	width: 100%;
+}
+
+#menu{
+	height:45px;
+	width: 100%;
+	background-color: #D7DE3D;
+}
+
+#content{
+	width: 100%;
+	min-height: 450px;
+}
+
+#footer{
+	clear:both;
+	width: 100%;
+	height: 50px;
+	background-color: #000000;  /* 背景色：黑色*/
+	color:#ffffff;  /* 字的顏色：白色 */
+	text-align: center;
+	line-height: 50px;
+
+}
+
+#menu li{
+	list-style: none;
+	float:left;
+	padding-left: 2em;
+	padding-right:2em;
+
+}
+#menu ul{
+	line-height: 45px;
+	margin-left:30%;
+}
+
+#menu a{
+	color:#ffffff;
+	text-decoration: none;
+	font-size:22px;
+	font-weight:bold;
+}
+
+#leftarea,#rightarea {
+
+	width:20%;
+	margin-left: 2em;
+	float: left;	
+}
+
+
+
+#centerarea{
+
+	width:50%;
+	margin-left: 2em;
+	float: left;	
+	border-left:1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+.area{
+	width:100%;
+	height:450px;
+}
+
+.area img{
+	width: 100%;
+}
+
+
+.newsarea{
+	width:23%;
+	margin-left: 2em;
+	margin-right:2em;
+	height:300px;
+	float:left;
+}
+
+.newsarea img{
+	width: 100%;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		{% block title %}
+		{% endblock %}
+	</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="{{ url_for('static',filename='image/favicon.ico')}}" type="image/x-icon" />
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/index.css')}}">
+
+	{% block css %}
+	{% endblock %}
+
+	{% block js %}
+	{% endblock %}
+
+
+</head>
+<body>
+
+<!--
+這個是註解
+-->
+<div id='banner'>
+	<div id='logo'>
+		<img src='static/image/logo.png'>
+	</div>
+</div>
+
+<div id='menu'>
+
+	<ul>
+		<li><a href='/twbank'>利率</a></li>
+		<li><a href='/product'>商品</a></li>
+		<li><a href='/food'>美食</a></li>
+		<li><a href='/news'>新聞</a></li>
+		<li><a href='/contact'>聯絡我們</a></li>
+	</ul>
+
+
+
+</div>
+
+<div id='content'>
+	{% block maincontent %}
+	{% endblock %}
+</div>
+
+
+<div id='footer'>
+	<span>我的網站全部圖文係屬我的版權所有Copyright© 2023 by mylcc.all Rights Reserved文中所提及之產品名稱，分別隸屬該註冊公司</span>
+</div>
+
+
+
+
+</body>
+</html>

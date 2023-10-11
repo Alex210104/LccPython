@@ -1,0 +1,50 @@
+{% extends 'Base.html' %}
+
+{% block title %}
+台銀即時匯率
+{% endblock %}
+
+
+	{% block css %}
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/news.css')}}">
+
+	<style>
+		
+		table th{
+			color:#ffffff;
+		}
+
+	</style>
+
+
+	{% endblock %}
+
+
+{% block maincontent %}
+
+	<div style="margin-top: 50px"></div>
+
+	<table width="90%" border="1" cellpadding="10" cellspacing="4">
+		
+		<tr>
+			<th bgcolor="#000000">幣別</th>
+			<th bgcolor="#000000">現金買入</th>
+			<th bgcolor="#000000">現金賣出</th>			
+		</tr>
+
+
+		{% for item in rate %}
+
+			<tr>
+				<td>{{item.0}}</td>
+				<td>{{item.1}}</td>
+				<td>{{item.2}}</td>
+			</tr>
+
+		{% endfor %}
+
+	</table>
+	
+
+{% endblock %}
+
